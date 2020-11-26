@@ -37,7 +37,9 @@ If you are unfamiliar with HTML tables, take a look at the [docs with an example
 1) Get the list of Transactions to display on the page given the transactions data being imported.
 2) After that is working, replace that data with the JSON you fetch from this url [https://boiling-brook-94902.herokuapp.com/transactions](https://boiling-brook-94902.herokuapp.com/transactions). It will be in the same format as the  default data.
 3) Now that you are using the real data, ensure that the user typing into the input field can appropriately update the state
-4) Using the state of the user input and the list of transactions, figure out how to render only the transactions that include the entered text in either the *description* or *category*
+4) Using the state of the user input and the list of transactions, figure out how to render only the transactions that include the entered text in either the *description* or *category* (Bonus: Highlight the searched string in the respective columns)
+5) By click on the column header the table should be sorted ascending. When clicking it a second time it should be sorted in the opposite direction. There should be an indicator (like arrow up/down) that shows by which column the table was sorted. Also highlight the whole column.
+Sorting/Searching should both work at the same time/in combination
 
 
 ## Criteria
@@ -48,6 +50,7 @@ We’ll be evaluating your code based on the following criteria:
 - **State:** Does the app have a search input that responds to changes and calls this.setState?
 - **Lifecycle Methods & API:** Does the app make an AJAX request to the API and return data? Does it set the state of the component within the app with that data within a lifecycle method?
 - **Feature:** Does the app filter the list of transactions?
+- **Feature:** Can the list be sorted?
 - Does the app follow best practices regarding state and component composition?
 
 
